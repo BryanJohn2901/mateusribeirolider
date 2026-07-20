@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Nova Pro';
+    src: url('nova-pro-2026-04-07-06-13-42-utc/NovaPro_EE/NovaPro-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nova Pro';
+    src: url('nova-pro-2026-04-07-06-13-42-utc/NovaPro_EE/NovaPro-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avantique';
+    src: url('avant-ique-corporate-logo-geometric-grotesk-font-2026-04-07-06-16-08-utc/Avantique%20Main%20Files/WOFF2/Avantique-Bold.woff2') format('woff2');
+    font-weight: 700 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avantique';
+    src: url('avant-ique-corporate-logo-geometric-grotesk-font-2026-04-07-06-16-08-utc/Avantique%20Main%20Files/WOFF2/Avantique-Semibold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}

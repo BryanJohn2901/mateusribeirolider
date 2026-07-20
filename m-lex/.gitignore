@@ -1,0 +1,10 @@
+.vercel
+.DS_Store
+*.log
+.env
+.env.*
+node_modules/
+.build-custom.css
+.build-tailwind.css
+dist/
+.vscode/

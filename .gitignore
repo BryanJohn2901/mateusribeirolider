@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+.npm/
+.pnpm-store/
+
+# Vercel
+.vercel/
+
+# Build artifacts (fonte estática já está nos index.html)
+**/dist/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+*.local
+
+# Env
+.env
+.env.*
+!.env.example

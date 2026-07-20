@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liderança que Enriquece | LEX</title>
+  <meta name="description" content="Descubra o método prático de Mateus Ribeiro, o guia definitivo para líderes que recusam o medíocre e estão prontos para transformar sua liderança no maior ativo do seu negócio.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Liderança que Enriquece | LEX">
+  <meta property="og:description" content="Descubra o método prático de Mateus Ribeiro para transformar sua liderança no maior ativo do seu negócio.">
+  <meta property="og:image" content="https://mateusribeirolider.com/livro-lideranca-que-enriquece/assets/og-lideranca-que-enriquece.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Liderança que Enriquece | LEX">
+  <meta name="twitter:description" content="Descubra o método prático de Mateus Ribeiro para transformar sua liderança no maior ativo do seu negócio.">
+  <meta name="twitter:image" content="https://mateusribeirolider.com/livro-lideranca-que-enriquece/assets/og-lideranca-que-enriquece.jpg">
+
+  <link rel="icon" href="assets/favicon.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="assets/favicon-48.png" type="image/png" sizes="48x48">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180">
+  <link rel="preload" as="image" href="assets/hero-mateus-livro-desktop.webp" type="image/webp" media="(min-width: 769px)">
+  <link rel="preload" as="image" href="assets/hero-mateus-livro-mobile.webp" type="image/webp" media="(max-width: 768px)">
+  <link rel="preload" as="image" href="assets/logo-lideranca-que-enriquece.webp" type="image/webp" fetchpriority="high">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0A0F2A',
+              navyMid: '#141B41',
+              blue: '#1539BC',
+              blueBright: '#0037C8',
+              soft: '#838DC1',
+              gold: '#CEB388',
+              sand: '#A2978D',
+              line: '#1C2358',
+              green: '#329C00',
+            }
+          },
+          fontFamily: {
+            sans: ['Sora', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            display: ['Playfair Display', 'Georgia', 'serif'],
+          },
+          keyframes: {
+            rise: {
+              '0%': { opacity: '0', transform: 'translateY(18px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            marquee: {
+              '0%': { transform: 'translateX(0)' },
+              '100%': { transform: 'translateX(-50%)' },
+            }
+          },
+          animation: {
+            rise: 'rise .8s ease-out both',
+            marquee: 'marquee 32s linear infinite',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      --navy: #0A0F2A;
+      --blue: #1539BC;
+      --gold: #CEB388;
+      --soft: #838DC1;
+    }
+
+    body {
+      background: var(--navy);
+      color: #fff;
+    }
+
+    .hero-bg {
+      background-color: #0A0F2A;
+      background-image:
+        linear-gradient(90deg, rgba(10,15,42,.97) 0%, rgba(10,15,42,.88) 42%, rgba(10,15,42,.35) 68%, rgba(10,15,42,.15) 100%),
+        url("assets/hero-mateus-livro-desktop.webp");
+      background-size: cover;
+      background-position: center right;
+      background-repeat: no-repeat;
+    }
+
+    @media (max-width: 768px) {
+      .hero-bg {
+        background-image:
+          linear-gradient(180deg, rgba(10,15,42,.94) 0%, rgba(10,15,42,.82) 48%, rgba(10,15,42,.45) 72%, rgba(10,15,42,.7) 100%),
+          url("assets/hero-mateus-livro-mobile.webp");
+        background-position: 70% top;
+      }
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #CEB388 0%, #A2978D 100%);
+      color: #0A0F2A;
+      font-weight: 800;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      border-radius: 999px;
+      transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
+      box-shadow: 0 12px 36px rgba(206, 179, 136, .28);
+    }
+
+    .cta:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.06);
+      box-shadow: 0 16px 40px rgba(206, 179, 136, .38);
+    }
+
+    .card {
+      background: rgba(20, 27, 65, .72);
+      border: 1px solid rgba(131, 141, 193, .18);
+      border-radius: 18px;
+      transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(206, 179, 136, .35);
+      box-shadow: 0 18px 48px rgba(0, 0, 0, .28);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    .reveal.in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .faq-item[open] summary .faq-icon-plus { display: none; }
+    .faq-item:not([open]) summary .faq-icon-open { display: none; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+
+    .video-shell {
+      aspect-ratio: 9 / 16;
+      max-height: min(72vh, 640px);
+      width: min(100%, 360px);
+    }
+
+    .marquee-track { width: max-content; }
+
+    .modal-backdrop {
+      background: rgba(4, 8, 28, .72);
+      backdrop-filter: blur(6px);
+    }
+
+    .check-item::before {
+      content: "";
+      width: 1.1rem;
+      height: 1.1rem;
+      flex-shrink: 0;
+      margin-top: .2rem;
+      background: url("assets/icone-check.svg") center / contain no-repeat;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+
+  <!-- HERO -->
+  <header class="hero-bg relative min-h-[100svh] flex flex-col">
+    <div class="mx-auto w-full max-w-6xl px-5 sm:px-8 pt-8 sm:pt-10 pb-16 sm:pb-24 flex-1 flex flex-col justify-center">
+      <div class="max-w-xl">
+        <img
+          src="assets/logo-lideranca-que-enriquece.webp"
+          alt="Logotipo do livro Liderança que Enriquece"
+          class="h-14 sm:h-16 w-auto animate-rise"
+          width="167"
+          height="98"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+        >
+
+        <h1 class="mt-7 sm:mt-8 text-3xl sm:text-4xl lg:text-[2.65rem] font-bold leading-[1.15] tracking-tight animate-rise" style="animation-delay:.12s">
+          Chega de Apenas Gerenciar Pessoas.
+          <span class="text-brand-gold">Aprenda a Construir um Movimento</span>
+          que Gera Lucro, Liberdade e Legado
+        </h1>
+
+        <p class="mt-5 sm:mt-6 text-base sm:text-lg text-brand-soft leading-relaxed max-w-lg animate-rise" style="animation-delay:.22s">
+          Descubra o método prático de Mateus Ribeiro, o guia definitivo para líderes que recusam o medíocre e estão prontos para transformar sua liderança no maior ativo do seu negócio
+        </p>
+
+        <div class="mt-8 animate-rise" style="animation-delay:.32s">
+          <button type="button" data-open-modal class="cta px-7 sm:px-10 py-4 text-xs sm:text-[13px] w-full sm:w-auto text-center">
+            GARANTIR MEU EXEMPLAR AGORA
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MARQUEE -->
+  <div class="bg-brand-navyMid border-y border-brand-line overflow-hidden py-3.5" aria-hidden="true">
+    <div class="marquee-track flex animate-marquee whitespace-nowrap">
+      <div class="flex items-center gap-8 px-5 font-bold tracking-[0.14em] text-xs sm:text-sm uppercase text-brand-gold">
+        <span>Liderança que Enriquece</span><span class="text-brand-soft/40">·</span>
+        <span>Liderança que Enriquece</span><span class="text-brand-soft/40">·</span>
+        <span>Liderança que Enriquece</span><span class="text-brand-soft/40">·</span>
+        <span>Liderança que Enriquece</span><span class="text-brand-soft/40">·</span>
+        <span>Liderança que Enriquece</span><span class="text-brand-soft/40">·</span>
+        <span>Liderança que Enriquece</span><span class="text-brand-soft/40">·</span>
+      </div>
+      <div class="flex items-center gap-8 px-5 font-bold tracking-[0.14em] text-xs sm:text-sm uppercase text-brand-gold">
+        <span>Liderança que Enriquece</span><span class="text-brand-soft/40">·</span>
+        <span>Liderança que Enriquece</span><span class="text-brand-soft/40">·</span>
+        <span>Liderança que Enriquece</span><span class="text-brand-soft/40">·</span>
+        <span>Liderança que Enriquece</span><span class="text-brand-soft/40">·</span>
+        <span>Liderança que Enriquece</span><span class="text-brand-soft/40">·</span>
+        <span>Liderança que Enriquece</span><span class="text-brand-soft/40">·</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- VIDEO -->
+  <section class="py-16 sm:py-20 px-5 bg-brand-navy">
+    <div class="mx-auto max-w-6xl reveal">
+      <h2 class="text-center text-3xl sm:text-4xl font-extrabold tracking-tight">Assista ao vídeo</h2>
+      <div class="mt-10 flex justify-center">
+        <div class="video-shell relative rounded-2xl overflow-hidden shadow-2xl shadow-black/40 bg-black ring-1 ring-white/10">
+          <iframe
+            class="absolute inset-0 h-full w-full"
+            src="https://www.youtube.com/embed/eseHPwtk9ik?rel=0&modestbranding=1"
+            title="Liderança que Enriquece: vídeo"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SITUAÇÕES -->
+  <section class="py-16 sm:py-24 px-5 bg-brand-navyMid">
+    <div class="mx-auto max-w-6xl">
+      <h2 class="reveal text-center text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight max-w-3xl mx-auto">
+        Se essas situações fazem parte da sua rotina,
+        <span class="text-brand-gold">este livro foi escrito para você</span>
+      </h2>
+
+      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+        <article class="card p-5 sm:p-6 reveal">
+          <p class="text-sm sm:text-base text-brand-soft leading-relaxed">Você é o CEO, mas ainda apaga incêndios que sua equipe deveria resolver</p>
+        </article>
+        <article class="card p-5 sm:p-6 reveal" style="transition-delay:.05s">
+          <p class="text-sm sm:text-base text-brand-soft leading-relaxed">Sua equipe não veste a camisa, e o turnover não para de crescer</p>
+        </article>
+        <article class="card p-5 sm:p-6 reveal" style="transition-delay:.1s">
+          <p class="text-sm sm:text-base text-brand-soft leading-relaxed">Você impacta pessoas, mas isso não se traduz em faturamento real</p>
+        </article>
+        <article class="card p-5 sm:p-6 reveal" style="transition-delay:.15s">
+          <p class="text-sm sm:text-base text-brand-soft leading-relaxed">Seu negócio depende 100% da sua presença para funcionar</p>
+        </article>
+        <article class="card p-5 sm:p-6 reveal sm:col-span-2 lg:col-span-1" style="transition-delay:.2s">
+          <p class="text-sm sm:text-base text-brand-soft leading-relaxed">Você sabe que precisa dobrar o resultado, mas não sabe por onde começar</p>
+        </article>
+      </div>
+
+      <div class="reveal mt-14 max-w-3xl mx-auto text-center">
+        <p class="text-lg sm:text-xl text-white/90 leading-relaxed">
+          O problema não está no seu nicho. Nem na economia.
+        </p>
+        <p class="mt-3 text-lg sm:text-xl text-brand-gold font-semibold leading-relaxed">
+          O problema está em uma liderança que ainda não aprendeu a enriquecer o líder, o liderado e o negócio.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARA QUEM -->
+  <section class="py-16 sm:py-24 px-5 bg-brand-navy">
+    <div class="mx-auto max-w-6xl">
+      <h2 class="reveal text-center text-3xl sm:text-4xl font-extrabold tracking-tight">
+        "Liderança que Enriquece" foi criado para você:
+      </h2>
+
+      <div class="mt-12 grid md:grid-cols-3 gap-5 sm:gap-6">
+        <article class="card p-6 sm:p-7 reveal">
+          <img src="assets/numero-01.svg" alt="" class="w-10 h-8" width="40" height="32" loading="lazy" decoding="async">
+          <h3 class="mt-5 text-xl font-extrabold text-brand-gold">CEO e Dono de Empresa</h3>
+          <p class="mt-3 text-sm text-brand-soft leading-relaxed">
+            Saia do operacional de uma vez por todas. Construa uma estrutura de liderança descentralizada, focada em cultura e em resultado financeiro real, não em gestão de crise.
+          </p>
+        </article>
+        <article class="card p-6 sm:p-7 reveal" style="transition-delay:.08s">
+          <img src="assets/numero-02.svg" alt="" class="w-10 h-8" width="40" height="32" loading="lazy" decoding="async">
+          <h3 class="mt-5 text-xl font-extrabold text-brand-gold">RHs, Mentores e Treinadores</h3>
+          <p class="mt-3 text-sm text-brand-soft leading-relaxed">
+            Adquira o ferramental técnico para diagnosticar falhas de comportamento, acelerar a curva de aprendizado e se tornar o profissional mais estratégico da organização.
+          </p>
+        </article>
+        <article class="card p-6 sm:p-7 reveal" style="transition-delay:.16s">
+          <img src="assets/numero-03.svg" alt="" class="w-10 h-8" width="40" height="32" loading="lazy" decoding="async">
+          <h3 class="mt-5 text-xl font-extrabold text-brand-gold">Quer ser Especialista em Gente</h3>
+          <p class="mt-3 text-sm text-brand-soft leading-relaxed">
+            Entenda a psicologia do impacto. Aprenda a ler pessoas, antecipar conflitos e se tornar o ativo mais valioso de qualquer time.
+          </p>
+        </article>
+      </div>
+
+      <blockquote class="reveal mt-14 max-w-3xl mx-auto text-center">
+        <p class="font-display text-2xl sm:text-3xl text-white/95 leading-snug italic">
+          "Liderar não é sobre ter um cargo. É sobre criar um ecossistema onde o crescimento é inevitável."
+        </p>
+        <footer class="mt-4 text-brand-gold font-semibold text-sm tracking-wide">Mateus Ribeiro</footer>
+      </blockquote>
+
+      <div class="reveal mt-10 text-center">
+        <button type="button" data-open-modal class="cta px-8 py-4 text-xs sm:text-[13px]">
+          GARANTIR MEU EXEMPLAR AGORA
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MANUAL -->
+  <section class="py-16 sm:py-24 px-5 bg-brand-navyMid">
+    <div class="mx-auto max-w-6xl">
+      <div class="reveal text-center max-w-3xl mx-auto">
+        <p class="text-brand-soft text-base sm:text-lg">Este não é mais um livro motivacional.</p>
+        <h2 class="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
+          É o seu novo
+          <span class="text-brand-gold">Manual de Operações Humano</span>
+        </h2>
+        <p class="mt-6 text-brand-soft leading-relaxed">
+          Mateus Ribeiro estruturou um método validado em torno das três esferas que todo líder de alta performance precisa dominar:
+        </p>
+      </div>
+
+      <div class="mt-12 grid md:grid-cols-2 gap-5 sm:gap-6 max-w-4xl mx-auto">
+        <article class="card p-6 sm:p-8 reveal">
+          <img src="assets/icone-destaque.svg" alt="" class="w-8 h-7" width="32" height="28" loading="lazy" decoding="async">
+          <h3 class="mt-5 text-xl font-extrabold">Prosperidade no Movimento</h3>
+          <p class="mt-3 text-brand-soft leading-relaxed">Como construir uma cultura tão forte que as pessoas lutam para fazer parte</p>
+        </article>
+        <article class="card p-6 sm:p-8 reveal" style="transition-delay:.08s">
+          <img src="assets/icone-spark.svg" alt="" class="w-8 h-7" width="32" height="28" loading="lazy" decoding="async">
+          <h3 class="mt-5 text-xl font-extrabold">Prosperidade no Impacto</h3>
+          <p class="mt-3 text-brand-soft leading-relaxed">O segredo para transformar vidas enquanto você constrói patrimônio</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- APRENDER -->
+  <section class="py-16 sm:py-24 px-5 bg-brand-navy">
+    <div class="mx-auto max-w-6xl">
+      <h2 class="reveal text-center text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
+        O que você vai aprender
+      </h2>
+
+      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+        <article class="card p-6 reveal">
+          <img src="assets/icone-aprender-01.svg" alt="" class="w-12 h-12" width="48" height="48" loading="lazy" decoding="async">
+          <h3 class="mt-4 font-extrabold text-lg text-brand-gold">Engenharia de Cultura</h3>
+          <p class="mt-2 text-sm text-brand-soft leading-relaxed">Como criar um movimento que atrai os melhores talentos, sem precisar implorar.</p>
+        </article>
+        <article class="card p-6 reveal" style="transition-delay:.05s">
+          <img src="assets/icone-aprender-02.svg" alt="" class="w-12 h-12" width="48" height="48" loading="lazy" decoding="async">
+          <h3 class="mt-4 font-extrabold text-lg text-brand-gold">Gestão por Impacto</h3>
+          <p class="mt-2 text-sm text-brand-soft leading-relaxed">O método para prosperar no negócio enquanto desenvolve o potencial máximo de cada colaborador.</p>
+        </article>
+        <article class="card p-6 reveal" style="transition-delay:.1s">
+          <img src="assets/icone-aprender-03.svg" alt="" class="w-12 h-12" width="48" height="48" loading="lazy" decoding="async">
+          <h3 class="mt-4 font-extrabold text-lg text-brand-gold">Formação de Líderes, não Seguidores</h3>
+          <p class="mt-2 text-sm text-brand-soft leading-relaxed">Construa uma equipe autogerenciável que entrega resultados sem que você precise microgerenciar.</p>
+        </article>
+        <article class="card p-6 reveal" style="transition-delay:.15s">
+          <img src="assets/icone-aprender-04.svg" alt="" class="w-12 h-12" width="48" height="48" loading="lazy" decoding="async">
+          <h3 class="mt-4 font-extrabold text-lg text-brand-gold">Autoridade Inabalável</h3>
+          <p class="mt-2 text-sm text-brand-soft leading-relaxed">Torne-se a referência que seu mercado respeita, segue e paga para ouvir.</p>
+        </article>
+        <article class="card p-6 reveal" style="transition-delay:.2s">
+          <img src="assets/icone-aprender-05.svg" alt="" class="w-12 h-12" width="48" height="48" loading="lazy" decoding="async">
+          <h3 class="mt-4 font-extrabold text-lg text-brand-gold">Mindset de Riqueza</h3>
+          <p class="mt-2 text-sm text-brand-soft leading-relaxed">Entenda por que liderança é a habilidade que mais paga no mundo, e como monetizar esse conhecimento.</p>
+        </article>
+        <article class="card p-6 reveal" style="transition-delay:.25s">
+          <img src="assets/icone-aprender-06.svg" alt="" class="w-12 h-12" width="48" height="48" loading="lazy" decoding="async">
+          <h3 class="mt-4 font-extrabold text-lg text-brand-gold">Liberdade de Tempo e Localização</h3>
+          <p class="mt-2 text-sm text-brand-soft leading-relaxed">Construa um movimento que prospera mesmo quando você decide descansar.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPÍTULOS / FERRAMENTAS -->
+  <section class="py-16 sm:py-24 px-5 bg-brand-navyMid">
+    <div class="mx-auto max-w-6xl grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+      <div class="reveal">
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight">
+          Estrutura direta ao ponto.
+          <span class="text-brand-gold">Leitura fluida e aplicável no dia seguinte.</span>
+        </h2>
+        <p class="mt-5 text-brand-soft leading-relaxed">
+          Cada capítulo vem com perguntas-guia, frameworks práticos e rituais de implementação com o time.
+        </p>
+      </div>
+      <ul class="reveal space-y-4 text-sm sm:text-base text-white/90 leading-relaxed">
+        <li class="check-item flex gap-3">Mapa para identificar o lucro oculto que está sendo drenado da sua empresa</li>
+        <li class="check-item flex gap-3">Método para delegar com critério e construir liderança descentralizada</li>
+        <li class="check-item flex gap-3">Framework para criar uma cultura de alta performance com engajamento real</li>
+        <li class="check-item flex gap-3">Script para conversas difíceis, feedbacks objetivos e planos de desenvolvimento</li>
+        <li class="check-item flex gap-3">Checklist para transformar líderes operacionais em líderes estratégicos</li>
+        <li class="check-item flex gap-3">Rituais semanais de alinhamento que eliminam o "telefone sem fio" da gestão</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- DIFERENTE -->
+  <section class="py-16 sm:py-24 px-5 bg-brand-navy">
+    <div class="mx-auto max-w-6xl">
+      <div class="reveal text-center max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Por que este livro é diferente?</h2>
+        <p class="mt-4 text-brand-soft leading-relaxed">Esqueça manuais de RH cheios de teoria e zero aplicação.</p>
+      </div>
+
+      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+        <article class="card p-6 reveal text-center sm:text-left">
+          <img src="assets/icone-diferenca-01.svg" alt="" class="w-10 h-10 mx-auto sm:mx-0" width="40" height="40" loading="lazy" decoding="async">
+          <h3 class="mt-4 font-extrabold text-brand-gold">Direto ao Ponto</h3>
+          <p class="mt-2 text-sm text-brand-soft leading-relaxed">Sem enrolação. Cada página entrega algo que você pode implementar imediatamente</p>
+        </article>
+        <article class="card p-6 reveal text-center sm:text-left" style="transition-delay:.05s">
+          <img src="assets/icone-diferenca-02.svg" alt="" class="w-10 h-10 mx-auto sm:mx-0" width="40" height="40" loading="lazy" decoding="async">
+          <h3 class="mt-4 font-extrabold text-brand-gold">Mentoria em papel</h3>
+          <p class="mt-2 text-sm text-brand-soft leading-relaxed">É como ter o Mateus Ribeiro ao seu lado, ajustando cada detalhe da sua rota</p>
+        </article>
+        <article class="card p-6 reveal text-center sm:text-left" style="transition-delay:.1s">
+          <img src="assets/icone-diferenca-03.svg" alt="" class="w-10 h-10 mx-auto sm:mx-0" width="40" height="40" loading="lazy" decoding="async">
+          <h3 class="mt-4 font-extrabold text-brand-gold">Foco em Riqueza</h3>
+          <p class="mt-2 text-sm text-brand-soft leading-relaxed">A liderança tratada como a principal ferramenta de geração de valor e dinheiro</p>
+        </article>
+        <article class="card p-6 reveal text-center sm:text-left" style="transition-delay:.15s">
+          <img src="assets/icone-destaque.svg" alt="" class="w-10 h-10 mx-auto sm:mx-0" width="40" height="40" loading="lazy" decoding="async">
+          <h3 class="mt-4 font-extrabold text-brand-gold">Método, não motivação</h3>
+          <p class="mt-2 text-sm text-brand-soft leading-relaxed">Checklists, frameworks, rituais e métricas, não frases de efeito</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTOR -->
+  <section class="py-16 sm:py-24 px-5 bg-brand-navyMid">
+    <div class="mx-auto max-w-6xl grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+      <div class="reveal order-2 lg:order-1">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
+          Quem é <span class="text-brand-gold">Mateus Ribeiro?</span>
+        </h2>
+        <p class="mt-6 text-brand-soft leading-relaxed text-base sm:text-lg">
+          Mateus Ribeiro é a autoridade por trás de diagnósticos de negócios que já destravaram milhões em faturamento. Especialista em neurobiologia aplicada à liderança e sistemas de vendas, Mateus não apenas ensina a liderar.
+        </p>
+        <p class="mt-4 text-brand-soft leading-relaxed text-base sm:text-lg">
+          Ele ensina você a codificar a cultura do seu negócio para que as pessoas prosperem sozinhas. Sua comunicação é brutalmente honesta e focada em implementação.
+        </p>
+      </div>
+      <div class="reveal order-1 lg:order-2">
+        <figure class="relative overflow-hidden rounded-[24px] ring-1 ring-brand-gold/30 shadow-2xl shadow-black/40">
+          <img
+            src="assets/mateus-ribeiro-autor.webp"
+            srcset="assets/mateus-ribeiro-autor-400.webp 400w, assets/mateus-ribeiro-autor.webp 560w"
+            sizes="(max-width: 1024px) 90vw, 520px"
+            alt="Mateus Ribeiro segurando o livro Liderança que Enriquece"
+            class="w-full h-full object-cover aspect-square object-top"
+            width="560"
+            height="565"
+            loading="lazy"
+            decoding="async"
+          >
+          <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-5 sm:p-6">
+            <p class="font-extrabold text-lg">Mateus Ribeiro</p>
+            <p class="text-sm text-white/75 mt-1">Especialista em liderança, gestão de pessoas e desenvolvimento humano</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFERTA -->
+  <section id="valor" class="py-16 sm:py-24 px-5 bg-brand-navy">
+    <div class="mx-auto max-w-6xl grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+      <div class="reveal order-2 lg:order-1">
+        <div class="card p-7 sm:p-10 border border-brand-gold/35 ring-1 ring-brand-gold/20">
+          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-soft">Livro físico "Liderança que Enriquece"</p>
+          <p class="mt-2 text-brand-gold font-medium">Exemplar autografado por Mateus Ribeiro</p>
+          <p class="mt-6 text-brand-soft text-lg">
+            De <span class="line-through decoration-white/30">R$ 159,00</span> por apenas:
+          </p>
+          <p class="mt-1 text-5xl sm:text-6xl font-extrabold text-brand-gold tracking-tight">R$ 99,90</p>
+          <p class="mt-2 text-white/80 font-medium">Com frete incluso</p>
+
+          <button type="button" data-open-modal class="cta mt-8 w-full py-4 text-xs sm:text-[13px]">
+            GARANTIR MEU EXEMPLAR AGORA
+          </button>
+        </div>
+      </div>
+      <div class="reveal order-1 lg:order-2 flex justify-center">
+        <img
+          src="assets/livro-lideranca-que-enriquece.webp"
+          srcset="assets/livro-lideranca-que-enriquece-560.webp 560w, assets/livro-lideranca-que-enriquece.webp 1200w"
+          sizes="(max-width: 768px) 90vw, 520px"
+          alt="Mockup do livro físico Liderança que Enriquece, de Mateus Ribeiro"
+          class="w-full max-w-lg drop-shadow-2xl"
+          width="1200"
+          height="621"
+          loading="lazy"
+          decoding="async"
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="py-16 sm:py-24 px-5 bg-brand-navyMid border-y border-brand-line">
+    <div class="mx-auto max-w-6xl grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+      <div class="reveal">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
+          O próximo nível do seu negócio exige
+          <span class="text-brand-gold">um novo nível de líder</span>
+        </h2>
+        <p class="mt-5 text-brand-soft leading-relaxed">
+          O mercado não perdoa líderes amadores. Enquanto você hesita, seus concorrentes estão formando times, otimizando processos e construindo culturas vencedoras. Os estoques são limitados.
+        </p>
+        <button type="button" data-open-modal class="cta mt-8 px-8 py-4 text-xs sm:text-[13px]">
+          GARANTIR MEU EXEMPLAR AGORA
+        </button>
+      </div>
+      <p class="reveal text-xl sm:text-2xl font-semibold leading-snug text-white/90">
+        "Liderança que Enriquece" é o divisor de águas entre quem apenas manda e quem constrói impérios
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 sm:py-20 px-5 bg-brand-navy">
+    <div class="mx-auto max-w-3xl">
+      <h2 class="reveal text-center text-3xl sm:text-4xl font-extrabold tracking-tight">Perguntas Frequentes</h2>
+
+      <div class="mt-10 space-y-3">
+        <details class="faq-item card group reveal">
+          <summary class="flex items-center gap-4 cursor-pointer list-none p-5 sm:p-6">
+            <span class="flex-1 font-bold text-left">É um livro motivacional?</span>
+            <img src="assets/icone-faq-abrir.svg" alt="" class="faq-icon-plus w-3 h-4 opacity-70 brightness-200" width="12" height="16" loading="lazy" decoding="async">
+            <img src="assets/icone-faq-fechar.svg" alt="" class="faq-icon-open w-4 h-3 opacity-70 brightness-200" width="16" height="12" loading="lazy" decoding="async">
+          </summary>
+          <div class="px-5 sm:px-6 pb-6 text-brand-soft leading-relaxed text-sm sm:text-base border-t border-brand-line mx-5 sm:mx-6">
+            <p class="pt-4">Não. É método prático: frameworks, rituais, checklists e métricas. Aplicação imediata.</p>
+          </div>
+        </details>
+
+        <details class="faq-item card group reveal" style="transition-delay:.05s">
+          <summary class="flex items-center gap-4 cursor-pointer list-none p-5 sm:p-6">
+            <span class="flex-1 font-bold text-left">Funciona para o meu segmento?</span>
+            <img src="assets/icone-faq-abrir.svg" alt="" class="faq-icon-plus w-3 h-4 opacity-70 brightness-200" width="12" height="16" loading="lazy" decoding="async">
+            <img src="assets/icone-faq-fechar.svg" alt="" class="faq-icon-open w-4 h-3 opacity-70 brightness-200" width="16" height="12" loading="lazy" decoding="async">
+          </summary>
+          <div class="px-5 sm:px-6 pb-6 text-brand-soft leading-relaxed text-sm sm:text-base border-t border-brand-line mx-5 sm:mx-6">
+            <p class="pt-4">Se você lidera pessoas, em qualquer segmento, o método se aplica. Liderança é a habilidade mais universal do mundo dos negócios.</p>
+          </div>
+        </details>
+
+        <details class="faq-item card group reveal" style="transition-delay:.1s">
+          <summary class="flex items-center gap-4 cursor-pointer list-none p-5 sm:p-6">
+            <span class="flex-1 font-bold text-left">Não tenho muito tempo. Consigo aplicar?</span>
+            <img src="assets/icone-faq-abrir.svg" alt="" class="faq-icon-plus w-3 h-4 opacity-70 brightness-200" width="12" height="16" loading="lazy" decoding="async">
+            <img src="assets/icone-faq-fechar.svg" alt="" class="faq-icon-open w-4 h-3 opacity-70 brightness-200" width="16" height="12" loading="lazy" decoding="async">
+          </summary>
+          <div class="px-5 sm:px-6 pb-6 text-brand-soft leading-relaxed text-sm sm:text-base border-t border-brand-line mx-5 sm:mx-6">
+            <p class="pt-4">Sim. Os capítulos são curtos, diretos e cada um termina com uma ação imediata. Você não precisa terminar o livro para começar a transformar sua equipe.</p>
+          </div>
+        </details>
+
+        <details class="faq-item card group reveal" style="transition-delay:.15s">
+          <summary class="flex items-center gap-4 cursor-pointer list-none p-5 sm:p-6">
+            <span class="flex-1 font-bold text-left">Como acesso os bônus?</span>
+            <img src="assets/icone-faq-abrir.svg" alt="" class="faq-icon-plus w-3 h-4 opacity-70 brightness-200" width="12" height="16" loading="lazy" decoding="async">
+            <img src="assets/icone-faq-fechar.svg" alt="" class="faq-icon-open w-4 h-3 opacity-70 brightness-200" width="16" height="12" loading="lazy" decoding="async">
+          </summary>
+          <div class="px-5 sm:px-6 pb-6 text-brand-soft leading-relaxed text-sm sm:text-base border-t border-brand-line mx-5 sm:mx-6">
+            <p class="pt-4">Entre em contato com nosso time comercial para ter acesso a tudo.</p>
+          </div>
+        </details>
+
+        <details class="faq-item card group reveal" style="transition-delay:.2s">
+          <summary class="flex items-center gap-4 cursor-pointer list-none p-5 sm:p-6">
+            <span class="flex-1 font-bold text-left">O livro é autografado?</span>
+            <img src="assets/icone-faq-abrir.svg" alt="" class="faq-icon-plus w-3 h-4 opacity-70 brightness-200" width="12" height="16" loading="lazy" decoding="async">
+            <img src="assets/icone-faq-fechar.svg" alt="" class="faq-icon-open w-4 h-3 opacity-70 brightness-200" width="16" height="12" loading="lazy" decoding="async">
+          </summary>
+          <div class="px-5 sm:px-6 pb-6 text-brand-soft leading-relaxed text-sm sm:text-base border-t border-brand-line mx-5 sm:mx-6">
+            <p class="pt-4">Sim. Todos os exemplares pedidos por esta página são autografados por Mateus Ribeiro.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#06091A] text-brand-soft/70 py-6 px-5 text-center text-xs tracking-wide">
+    Copyright © 2026 Todos os direitos reservados.
+  </footer>
+
+  <!-- MODAL -->
+  <div id="lead-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="relative w-full max-w-md bg-brand-navyMid rounded-2xl shadow-2xl p-6 sm:p-8 animate-rise border border-brand-line">
+      <button type="button" data-close-modal class="absolute top-4 right-4 text-brand-soft hover:text-white text-2xl leading-none" aria-label="Fechar">&times;</button>
+      <h3 id="modal-title" class="text-2xl font-extrabold pr-8">Garanta seu exemplar</h3>
+      <p class="mt-2 text-sm text-brand-soft">Preencha seus dados e nossa equipe entra em contato para finalizar seu pedido.</p>
+      <form id="lead-form" class="mt-6 space-y-3">
+        <input type="text" name="name" placeholder="Nome" required class="w-full rounded-xl border border-brand-line bg-brand-navy px-4 py-3 text-sm outline-none focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20">
+        <input type="email" name="email" placeholder="Email" required class="w-full rounded-xl border border-brand-line bg-brand-navy px-4 py-3 text-sm outline-none focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20">
+        <input type="tel" name="whatsapp" placeholder="WhatsApp (DDD + Número)" required pattern="[0-9()#&+*\-=.]+" class="w-full rounded-xl border border-brand-line bg-brand-navy px-4 py-3 text-sm outline-none focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20">
+        <button type="submit" class="cta w-full py-3.5 text-sm">Enviar</button>
+      </form>
+      <p id="form-success" class="hidden mt-4 text-sm text-center text-brand-gold font-medium">Recebemos seus dados. Em breve entraremos em contato.</p>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const modal = document.getElementById('lead-modal');
+      const form = document.getElementById('lead-form');
+      const success = document.getElementById('form-success');
+
+      function openModal() {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        document.body.style.overflow = '';
+      }
+
+      document.querySelectorAll('[data-open-modal]').forEach(function (btn) {
+        btn.addEventListener('click', openModal);
+      });
+      document.querySelectorAll('[data-close-modal]').forEach(function (btn) {
+        btn.addEventListener('click', closeModal);
+      });
+      modal.addEventListener('click', function (e) {
+        if (e.target === modal) closeModal();
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeModal();
+      });
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        form.classList.add('hidden');
+        success.classList.remove('hidden');
+      });
+
+      const io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+      document.querySelectorAll('.reveal').forEach(function (el) {
+        io.observe(el);
+      });
+    })();
+  </script>
+</body>
+</html>

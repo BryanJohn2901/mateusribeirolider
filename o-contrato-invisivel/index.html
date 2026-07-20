@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O Contrato Invisível | LEX</title>
+  <meta name="description" content="Descubra o Contrato Invisível que está bloqueando sua prosperidade e aprenda a rasgar as lealdades emocionais que te impedem de ser livre.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="O Contrato Invisível | LEX">
+  <meta property="og:description" content="Descubra o Contrato Invisível que está bloqueando sua prosperidade e aprenda a rasgar as lealdades emocionais que te impedem de ser livre.">
+  <meta property="og:image" content="https://mateusribeirolider.com/o-contrato-invisivel/assets/og-contrato-invisivel.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="O Contrato Invisível | LEX">
+  <meta name="twitter:description" content="Descubra o Contrato Invisível que está bloqueando sua prosperidade e aprenda a rasgar as lealdades emocionais que te impedem de ser livre.">
+  <meta name="twitter:image" content="https://mateusribeirolider.com/o-contrato-invisivel/assets/og-contrato-invisivel.jpg">
+
+  <link rel="icon" href="assets/favicon.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="assets/favicon-48.png" type="image/png" sizes="48x48">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180">
+  <link rel="preload" as="image" href="assets/hero-mateus-ribeiro-desktop.webp" type="image/webp" media="(min-width: 769px)">
+  <link rel="preload" as="image" href="assets/hero-mateus-ribeiro-mobile.webp" type="image/webp" media="(max-width: 768px)">
+  <link rel="preload" as="image" href="assets/logo-contrato-invisivel.webp" type="image/webp" fetchpriority="high">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              red: '#E70302',
+              tan: '#DACDAB',
+              tanDeep: '#C9B892',
+              ink: '#3C3A39',
+              soft: '#6F6F6F',
+              line: '#E9E9E9',
+              deep: '#152B20',
+            }
+          },
+          fontFamily: {
+            sans: ['Sora', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            display: ['Playfair Display', 'Georgia', 'serif'],
+          },
+          keyframes: {
+            marquee: {
+              '0%': { transform: 'translateX(0)' },
+              '100%': { transform: 'translateX(-50%)' },
+            },
+            rise: {
+              '0%': { opacity: '0', transform: 'translateY(18px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            pulseSoft: {
+              '0%, 100%': { transform: 'scale(1)' },
+              '50%': { transform: 'scale(1.06)' },
+            }
+          },
+          animation: {
+            marquee: 'marquee 28s linear infinite',
+            rise: 'rise .8s ease-out both',
+            pulseSoft: 'pulseSoft 2.4s ease-in-out infinite',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      --red: #E70302;
+      --tan: #DACDAB;
+      --ink: #3C3A39;
+    }
+
+    body {
+      color: var(--ink);
+      background: #fff;
+    }
+
+    .hero-bg {
+      background-image:
+        linear-gradient(90deg, #fff 0%, rgba(255,255,255,.96) 38%, rgba(255,255,255,.55) 58%, rgba(255,255,255,0) 78%),
+        url("assets/hero-mateus-ribeiro-desktop.webp");
+      background-size: cover;
+      background-position: center right;
+      background-repeat: no-repeat;
+    }
+
+    @media (max-width: 768px) {
+      .hero-bg {
+        background-image:
+          linear-gradient(180deg, rgba(255,255,255,.92) 0%, rgba(255,255,255,.88) 42%, rgba(255,255,255,.35) 70%, rgba(20,20,20,.55) 100%),
+          url("assets/hero-mateus-ribeiro-mobile.webp");
+        background-position: 70% top;
+      }
+    }
+
+    .eyebrow {
+      border-left: 2px solid var(--red);
+      padding-left: .85rem;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--tan);
+      color: #1a1a1a;
+      font-weight: 800;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      border-radius: 999px;
+      transition: transform .25s ease, background .25s ease, box-shadow .25s ease;
+      box-shadow: 0 10px 30px rgba(60, 58, 57, .12);
+    }
+
+    .cta:hover {
+      background: #E8D9B8;
+      color: #152B20;
+      transform: translateY(-2px);
+      box-shadow: 0 14px 34px rgba(60, 58, 57, .16);
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid rgba(60, 58, 57, .06);
+      border-radius: 18px;
+      box-shadow: 0 12px 40px rgba(60, 58, 57, .06);
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 48px rgba(60, 58, 57, .1);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    .reveal.in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .faq-item[open] summary .faq-icon-plus { display: none; }
+    .faq-item:not([open]) summary .faq-icon-open { display: none; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+
+    .video-shell {
+      aspect-ratio: 9 / 16;
+      max-height: min(72vh, 640px);
+      width: min(100%, 360px);
+    }
+
+    .marquee-track {
+      width: max-content;
+    }
+
+    .modal-backdrop {
+      background: rgba(20, 18, 16, .62);
+      backdrop-filter: blur(6px);
+    }
+  </style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+
+  <!-- HERO -->
+  <header class="hero-bg relative min-h-[100svh] flex flex-col">
+    <div class="mx-auto w-full max-w-6xl px-5 sm:px-8 pt-8 sm:pt-10 pb-16 sm:pb-24 flex-1 flex flex-col justify-center">
+      <div class="max-w-xl">
+        <img
+          src="assets/logo-contrato-invisivel.webp"
+          alt="Logotipo do livro O Contrato Invisível"
+          class="h-16 sm:h-20 w-auto animate-rise"
+          width="214"
+          height="116"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+          style="animation-delay:.05s"
+        >
+
+        <p class="eyebrow mt-6 sm:mt-8 text-brand-red font-medium text-sm sm:text-base leading-snug animate-rise" style="animation-delay:.15s">
+          Para quem carrega um peso que nunca pediu para ter
+        </p>
+
+        <h1 class="mt-4 sm:mt-5 text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-[1.15] tracking-tight text-brand-ink animate-rise" style="animation-delay:.25s">
+          Você está vivendo a sua vida ou
+          <span class="text-brand-red">cumprindo o roteiro</span>
+          que escreveram para você?
+        </h1>
+
+        <p class="mt-5 sm:mt-6 text-base sm:text-lg text-brand-soft leading-relaxed max-w-md animate-rise" style="animation-delay:.35s">
+          Descubra o <strong class="text-brand-ink font-semibold">Contrato Invisível</strong>
+          que está bloqueando sua prosperidade e aprenda a rasgar as
+          <strong class="text-brand-ink font-semibold">lealdades emocionais</strong>
+          que te impedem de ser livre.
+        </p>
+
+        <div class="mt-8 animate-rise" style="animation-delay:.45s">
+          <button type="button" data-open-modal class="cta px-7 sm:px-10 py-4 text-xs sm:text-[13px] w-full sm:w-auto text-center">
+            QUERO RASGAR MEUS CONTRATOS INVISÍVEIS
+          </button>
+          <p class="mt-3 text-xs sm:text-sm text-brand-soft">
+            Clique e garanta seu exemplar físico agora
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MARQUEE -->
+  <div class="bg-brand-tan overflow-hidden border-y border-black/5 py-3.5" aria-hidden="true">
+    <div class="marquee-track flex animate-marquee whitespace-nowrap">
+      <div class="flex items-center gap-8 px-5 font-bold tracking-[0.12em] text-xs sm:text-sm uppercase">
+        <span><span class="text-brand-red">O CONTRATO</span> <span class="text-brand-ink">INVISÍVEL</span></span>
+        <span class="text-brand-red/40">·</span>
+        <span><span class="text-brand-red">O CONTRATO</span> <span class="text-brand-ink">INVISÍVEL</span></span>
+        <span class="text-brand-red/40">·</span>
+        <span><span class="text-brand-red">O CONTRATO</span> <span class="text-brand-ink">INVISÍVEL</span></span>
+        <span class="text-brand-red/40">·</span>
+        <span><span class="text-brand-red">O CONTRATO</span> <span class="text-brand-ink">INVISÍVEL</span></span>
+        <span class="text-brand-red/40">·</span>
+        <span><span class="text-brand-red">O CONTRATO</span> <span class="text-brand-ink">INVISÍVEL</span></span>
+        <span class="text-brand-red/40">·</span>
+        <span><span class="text-brand-red">O CONTRATO</span> <span class="text-brand-ink">INVISÍVEL</span></span>
+        <span class="text-brand-red/40">·</span>
+      </div>
+      <div class="flex items-center gap-8 px-5 font-bold tracking-[0.12em] text-xs sm:text-sm uppercase">
+        <span><span class="text-brand-red">O CONTRATO</span> <span class="text-brand-ink">INVISÍVEL</span></span>
+        <span class="text-brand-red/40">·</span>
+        <span><span class="text-brand-red">O CONTRATO</span> <span class="text-brand-ink">INVISÍVEL</span></span>
+        <span class="text-brand-red/40">·</span>
+        <span><span class="text-brand-red">O CONTRATO</span> <span class="text-brand-ink">INVISÍVEL</span></span>
+        <span class="text-brand-red/40">·</span>
+        <span><span class="text-brand-red">O CONTRATO</span> <span class="text-brand-ink">INVISÍVEL</span></span>
+        <span class="text-brand-red/40">·</span>
+        <span><span class="text-brand-red">O CONTRATO</span> <span class="text-brand-ink">INVISÍVEL</span></span>
+        <span class="text-brand-red/40">·</span>
+        <span><span class="text-brand-red">O CONTRATO</span> <span class="text-brand-ink">INVISÍVEL</span></span>
+        <span class="text-brand-red/40">·</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- VIDEO -->
+  <section class="bg-brand-tan py-16 sm:py-20 px-5">
+    <div class="mx-auto max-w-6xl reveal">
+      <h2 class="text-center text-3xl sm:text-4xl font-extrabold text-brand-ink tracking-tight">
+        Assista ao vídeo
+      </h2>
+      <div class="mt-10 flex justify-center">
+        <div class="video-shell relative rounded-2xl overflow-hidden shadow-2xl shadow-black/20 bg-black ring-1 ring-black/10">
+          <iframe
+            class="absolute inset-0 h-full w-full"
+            src="https://www.youtube.com/embed/4nVtwJfqigs?rel=0&modestbranding=1"
+            title="O Contrato Invisível: vídeo"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRISÃO -->
+  <section class="py-16 sm:py-24 px-5 bg-white">
+    <div class="mx-auto max-w-6xl grid lg:grid-cols-[0.9fr_1.1fr] gap-12 lg:gap-16 items-start">
+      <div class="reveal lg:sticky lg:top-24">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight">
+          A Prisão Que
+          <span class="text-brand-red">Não Tem</span>
+          Grades
+        </h2>
+        <p class="mt-6 text-brand-soft text-base sm:text-lg leading-relaxed">
+          Você não está falhando por falta de capacidade.
+          Você está falhando por excesso de lealdade a dores e padrões que não são seus.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-4 sm:gap-5">
+        <article class="card p-5 sm:p-6 reveal">
+          <img src="assets/badge-01.svg" alt="" class="w-12 h-12" width="48" height="48" loading="lazy" decoding="async">
+          <h3 class="mt-4 font-extrabold text-lg text-brand-ink">Síndrome do Impostor Ancestral</h3>
+          <p class="mt-2 text-sm text-brand-soft leading-relaxed">Aquela voz que diz que você não merece o sucesso porque seus pais nunca o tiveram</p>
+        </article>
+        <article class="card p-5 sm:p-6 reveal" style="transition-delay:.05s">
+          <img src="assets/badge-02.svg" alt="" class="w-12 h-12" width="48" height="48" loading="lazy" decoding="async">
+          <h3 class="mt-4 font-extrabold text-lg text-brand-ink">Fadiga do Salvador</h3>
+          <p class="mt-2 text-sm text-brand-soft leading-relaxed">A compulsão de carregar os problemas de todos enquanto a sua própria vida fica estagnada</p>
+        </article>
+        <article class="card p-5 sm:p-6 reveal" style="transition-delay:.1s">
+          <img src="assets/badge-03.svg" alt="" class="w-12 h-12" width="48" height="48" loading="lazy" decoding="async">
+          <h3 class="mt-4 font-extrabold text-lg text-brand-ink">Ciclo da Escassez Crônica</h3>
+          <p class="mt-2 text-sm text-brand-soft leading-relaxed">Por que você se autossabota exatamente quando está prestes a dar um grande salto financeiro</p>
+        </article>
+        <article class="card p-5 sm:p-6 reveal" style="transition-delay:.15s">
+          <img src="assets/badge-04.svg" alt="" class="w-12 h-12" width="48" height="48" loading="lazy" decoding="async">
+          <h3 class="mt-4 font-extrabold text-lg text-brand-ink">Relacionamentos Espelho</h3>
+          <p class="mt-2 text-sm text-brand-soft leading-relaxed">A dor de atrair sempre pessoas que te desvalorizam da mesma forma que você foi desvalorizado na infância</p>
+        </article>
+        <article class="card p-5 sm:p-6 reveal" style="transition-delay:.2s">
+          <img src="assets/badge-05.svg" alt="" class="w-12 h-12" width="48" height="48" loading="lazy" decoding="async">
+          <h3 class="mt-4 font-extrabold text-lg text-brand-ink">Culpa de Prosperar</h3>
+          <p class="mt-2 text-sm text-brand-soft leading-relaxed">Aquela sensação de que ser feliz ou rico é uma traição à sua origem</p>
+        </article>
+        <article class="card p-5 sm:p-6 reveal" style="transition-delay:.25s">
+          <img src="assets/badge-06.svg" alt="" class="w-12 h-12" width="48" height="48" loading="lazy" decoding="async">
+          <h3 class="mt-4 font-extrabold text-lg text-brand-ink">Busca por Aprovação Infinita</h3>
+          <p class="mt-2 text-sm text-brand-soft leading-relaxed">A incapacidade de viver, gastar, mudar ou brilhar sem pedir permissão para ninguém</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PÁGINAS -->
+  <section class="bg-brand-tan py-16 sm:py-24 px-5">
+    <div class="mx-auto max-w-6xl">
+      <h2 class="reveal text-center text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight max-w-3xl mx-auto">
+        O Que Você Vai Encontrar
+        <span class="text-brand-red">nas Páginas de Contrato Invisível</span>
+      </h2>
+
+      <div class="mt-12 grid sm:grid-cols-2 gap-4 sm:gap-6">
+        <article class="card p-6 sm:p-8 reveal">
+          <img src="assets/badge-01.svg" alt="" class="w-12 h-12" width="48" height="48" loading="lazy" decoding="async">
+          <h3 class="mt-5 text-xl font-extrabold">Mapeamento de Lealdades</h3>
+          <p class="mt-3 text-brand-soft leading-relaxed">Como desenhar seu mapa emocional e ver onde o "sangramento" de energia começa</p>
+        </article>
+        <article class="card p-6 sm:p-8 reveal" style="transition-delay:.05s">
+          <img src="assets/badge-02.svg" alt="" class="w-12 h-12" width="48" height="48" loading="lazy" decoding="async">
+          <h3 class="mt-5 text-xl font-extrabold">O Ritual do Rompimento</h3>
+          <p class="mt-3 text-brand-soft leading-relaxed">Passos práticos, não apenas teóricos, para encerrar acordos feitos na sua infância</p>
+        </article>
+        <article class="card p-6 sm:p-8 reveal" style="transition-delay:.1s">
+          <img src="assets/badge-03.svg" alt="" class="w-12 h-12" width="48" height="48" loading="lazy" decoding="async">
+          <h3 class="mt-5 text-xl font-extrabold">O Código da Prosperidade</h3>
+          <p class="mt-3 text-brand-soft leading-relaxed">A relação direta entre honrar seu passado sem carregar o peso dele e o fluxo de dinheiro na sua vida</p>
+        </article>
+        <article class="card p-6 sm:p-8 reveal" style="transition-delay:.15s">
+          <img src="assets/badge-04.svg" alt="" class="w-12 h-12" width="48" height="48" loading="lazy" decoding="async">
+          <h3 class="mt-5 text-xl font-extrabold">A Reconstrução da Identidade</h3>
+          <p class="mt-3 text-brand-soft leading-relaxed">Como deixar de ser personagem secundário na história de outros e se tornar protagonista da sua própria</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTOR -->
+  <section class="py-16 sm:py-24 px-5 bg-white">
+    <div class="mx-auto max-w-6xl grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+      <div class="reveal order-2 lg:order-1">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
+          Quem é <span class="text-brand-red">Mateus Ribeiro?</span>
+        </h2>
+        <p class="mt-6 text-brand-soft leading-relaxed text-base sm:text-lg">
+          Mateus Ribeiro é a autoridade por trás de diagnósticos de negócios que já destravaram milhões em faturamento. Especialista em neurobiologia aplicada à liderança e sistemas de vendas, Mateus não apenas ensina a liderar.
+        </p>
+        <p class="mt-4 text-brand-soft leading-relaxed text-base sm:text-lg">
+          Ele ensina você a codificar a cultura do seu negócio para que as pessoas prosperem sozinhas. Sua comunicação é brutalmente honesta e focada em implementação.
+        </p>
+      </div>
+      <div class="reveal order-1 lg:order-2 relative">
+        <div class="absolute -inset-3 rounded-[28px] bg-brand-tan/50 blur-xl"></div>
+        <figure class="relative overflow-hidden rounded-[24px] ring-1 ring-brand-red/30 shadow-2xl shadow-brand-ink/15">
+          <img
+            src="assets/mateus-ribeiro-autor.webp"
+            srcset="assets/mateus-ribeiro-autor-400.webp 400w, assets/mateus-ribeiro-autor.webp 590w"
+            sizes="(max-width: 1024px) 90vw, 560px"
+            alt="Mateus Ribeiro em palestra, autor do livro O Contrato Invisível"
+            class="w-full h-full object-cover aspect-[4/5] sm:aspect-square object-top"
+            width="590"
+            height="691"
+            loading="lazy"
+            decoding="async"
+          >
+          <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 via-black/40 to-transparent p-5 sm:p-6 text-white">
+            <p class="font-extrabold text-lg">Mateus Ribeiro</p>
+            <p class="text-sm text-white/80 mt-1">Especialista em liderança, gestão de pessoas e desenvolvimento humano</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVISOR DE ÁGUAS -->
+  <section class="bg-[#F7F3EA] py-16 sm:py-24 px-5">
+    <div class="mx-auto max-w-6xl">
+      <div class="reveal text-center max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
+          Por Que Contrato Invisível É Um
+          <span class="text-brand-red">Divisor de Águas</span>
+        </h2>
+        <p class="mt-6 text-brand-soft text-base sm:text-lg leading-relaxed">
+          Diferente de livros que focam apenas em “pensamento positivo”,
+          Contrato Invisível trata da limpeza do terreno.
+          Não adianta plantar sementes de sucesso em solo envenenado por contratos de dor.
+        </p>
+      </div>
+
+      <div class="mt-14 grid md:grid-cols-3 gap-8 sm:gap-10">
+        <article class="reveal text-center px-2">
+          <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-brand-red/10 ring-1 ring-brand-red/20">
+            <img src="assets/icone-destaque.svg" alt="" class="w-7 h-7" width="28" height="28" loading="lazy" decoding="async" style="filter:brightness(0) saturate(100%) invert(14%) sepia(94%) saturate(7482%) hue-rotate(1deg) brightness(95%) contrast(107%)">
+          </div>
+          <h3 class="mt-5 text-xl font-extrabold">Metodologia direta</h3>
+          <p class="mt-3 text-sm sm:text-base text-brand-soft leading-relaxed">
+            Sem rodeios. O autor expõe as feridas que você tentou esconder e entrega o antídoto para o veneno geracional
+          </p>
+        </article>
+        <article class="reveal text-center px-2" style="transition-delay:.08s">
+          <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-brand-red/10 ring-1 ring-brand-red/20">
+            <img src="assets/icone-destaque.svg" alt="" class="w-7 h-7" width="28" height="28" loading="lazy" decoding="async" style="filter:brightness(0) saturate(100%) invert(14%) sepia(94%) saturate(7482%) hue-rotate(1deg) brightness(95%) contrast(107%)">
+          </div>
+          <h3 class="mt-5 text-xl font-extrabold">Metodologia direta</h3>
+          <p class="mt-3 text-sm sm:text-base text-brand-soft leading-relaxed">
+            Sem rodeios. O autor expõe as feridas que você tentou esconder e entrega o antídoto para o veneno geracional
+          </p>
+        </article>
+        <article class="reveal text-center px-2" style="transition-delay:.16s">
+          <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-brand-red/10 ring-1 ring-brand-red/20">
+            <img src="assets/icone-destaque.svg" alt="" class="w-7 h-7" width="28" height="28" loading="lazy" decoding="async" style="filter:brightness(0) saturate(100%) invert(14%) sepia(94%) saturate(7482%) hue-rotate(1deg) brightness(95%) contrast(107%)">
+          </div>
+          <h3 class="mt-5 text-xl font-extrabold">Metodologia direta</h3>
+          <p class="mt-3 text-sm sm:text-base text-brand-soft leading-relaxed">
+            Sem rodeios. O autor expõe as feridas que você tentou esconder e entrega o antídoto para o veneno geracional
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFERTA -->
+  <section id="valor" class="py-16 sm:py-24 px-5 bg-white">
+    <div class="mx-auto max-w-6xl grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+      <div class="reveal order-2 lg:order-1">
+        <div class="card p-7 sm:p-10 border border-brand-red/40 ring-1 ring-brand-red/20">
+          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-soft">Qual investimento?</p>
+          <p class="mt-4 text-brand-soft text-lg">
+            de <span class="line-through decoration-brand-ink/40">R$159,90</span> por
+          </p>
+          <p class="mt-1 text-5xl sm:text-6xl font-extrabold text-brand-red tracking-tight">R$99,90</p>
+          <p class="mt-2 text-brand-ink font-medium">com frete incluso</p>
+
+          <button type="button" data-open-modal class="cta mt-8 w-full py-4 text-xs sm:text-[13px]">
+            QUERO MEU EXEMPLAR FÍSICO
+          </button>
+          <p class="mt-4 text-sm text-brand-soft text-center sm:text-left">
+            Pare de pagar por dívidas emocionais que você não contraiu
+          </p>
+        </div>
+      </div>
+      <div class="reveal order-1 lg:order-2 flex justify-center">
+        <img
+          src="assets/livro-contrato-invisivel.webp"
+          srcset="assets/livro-contrato-invisivel-448.webp 448w, assets/livro-contrato-invisivel.webp 816w"
+          sizes="(max-width: 768px) 90vw, 448px"
+          alt="Mockup do livro físico O Contrato Invisível, de Mateus Ribeiro"
+          class="w-full max-w-md drop-shadow-2xl"
+          width="816"
+          height="673"
+          loading="lazy"
+          decoding="async"
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 sm:py-20 px-5 bg-[#FAFAF8]">
+    <div class="mx-auto max-w-3xl">
+      <h2 class="reveal text-center text-3xl sm:text-4xl font-extrabold tracking-tight">Perguntas Frequentes</h2>
+
+      <div class="mt-10 space-y-3">
+        <details class="faq-item card group reveal">
+          <summary class="flex items-center gap-4 cursor-pointer list-none p-5 sm:p-6">
+            <span class="text-brand-red font-extrabold text-lg shrink-0">01</span>
+            <span class="flex-1 font-bold text-left text-brand-ink">"Eu amo minha família. Não quero me afastar deles."</span>
+            <img src="assets/icone-faq-abrir.svg" alt="" class="faq-icon-plus w-4 h-4 opacity-70" width="16" height="16" loading="lazy" decoding="async">
+            <img src="assets/icone-faq-fechar.svg" alt="" class="faq-icon-open w-4 h-4 opacity-70" width="16" height="16" loading="lazy" decoding="async">
+          </summary>
+          <div class="px-5 sm:px-6 pb-6 pt-0 text-brand-soft leading-relaxed text-sm sm:text-base border-t border-brand-line/80 mx-5 sm:mx-6">
+            <p class="pt-4">
+              Romper um Contrato Invisível não é sobre distância física, é sobre distância emocional. Você continua amando, mas deixa de carregar o que não é seu. É o maior ato de amor que você pode ter por você e por eles.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item card group reveal" style="transition-delay:.05s">
+          <summary class="flex items-center gap-4 cursor-pointer list-none p-5 sm:p-6">
+            <span class="text-brand-red font-extrabold text-lg shrink-0">02</span>
+            <span class="flex-1 font-bold text-left text-brand-ink">"Já li muitos livros sobre esse assunto..."</span>
+            <img src="assets/icone-faq-abrir.svg" alt="" class="faq-icon-plus w-4 h-4 opacity-70" width="16" height="16" loading="lazy" decoding="async">
+            <img src="assets/icone-faq-fechar.svg" alt="" class="faq-icon-open w-4 h-4 opacity-70" width="16" height="16" loading="lazy" decoding="async">
+          </summary>
+          <div class="px-5 sm:px-6 pb-6 pt-0 text-brand-soft leading-relaxed text-sm sm:text-base border-t border-brand-line/80 mx-5 sm:mx-6">
+            <p class="pt-4">
+              Nenhum deles foca na lealdade invisível. Você pode ter a técnica, mas se existir um contrato de “não ser maior que seu pai”, você nunca crescerá. Este livro ataca o bloqueio, não o sintoma.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item card group reveal" style="transition-delay:.1s">
+          <summary class="flex items-center gap-4 cursor-pointer list-none p-5 sm:p-6">
+            <span class="text-brand-red font-extrabold text-lg shrink-0">03</span>
+            <span class="flex-1 font-bold text-left text-brand-ink">"É difícil mudar?"</span>
+            <img src="assets/icone-faq-abrir.svg" alt="" class="faq-icon-plus w-4 h-4 opacity-70" width="16" height="16" loading="lazy" decoding="async">
+            <img src="assets/icone-faq-fechar.svg" alt="" class="faq-icon-open w-4 h-4 opacity-70" width="16" height="16" loading="lazy" decoding="async">
+          </summary>
+          <div class="px-5 sm:px-6 pb-6 pt-0 text-brand-soft leading-relaxed text-sm sm:text-base border-t border-brand-line/80 mx-5 sm:mx-6">
+            <p class="pt-4">
+              Difícil é passar o resto da vida vivendo uma mentira. Este livro torna o processo de libertação claro, seguro e aplicável a partir da primeira leitura.
+            </p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="py-16 sm:py-24 px-5 bg-white border-t border-brand-line">
+    <div class="mx-auto max-w-6xl grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+      <div class="reveal">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
+          O Custo da <span class="text-brand-red">Inércia</span>
+        </h2>
+        <button type="button" data-open-modal class="cta mt-8 px-8 py-4 text-xs sm:text-[13px]">
+          QUERO PROSPERAR SEM CULPA
+        </button>
+        <p class="mt-4 text-sm text-brand-soft max-w-md">
+          Garanta seu exemplar e descubra como o Contrato Invisível está moldando e limitando o seu destino
+        </p>
+      </div>
+      <ul class="reveal space-y-4 text-brand-ink/90 text-base sm:text-lg leading-relaxed">
+        <li class="flex gap-3">
+          <span class="mt-2 h-2 w-2 rounded-full bg-brand-red shrink-0"></span>
+          <span>Cada dia sem ler este livro é mais um dia vivendo pelas regras de outra pessoa.</span>
+        </li>
+        <li class="flex gap-3">
+          <span class="mt-2 h-2 w-2 rounded-full bg-brand-red shrink-0"></span>
+          <span>Quanto custa para você continuar vivendo apenas 10% do seu potencial?</span>
+        </li>
+        <li class="flex gap-3">
+          <span class="mt-2 h-2 w-2 rounded-full bg-brand-red shrink-0"></span>
+          <span>O preço da liberdade é uma decisão. Tome a sua agora.</span>
+        </li>
+        <li class="flex gap-3 font-semibold">
+          <span class="mt-2 h-2 w-2 rounded-full bg-brand-red shrink-0"></span>
+          <span>O destino não é o que acontece com você, é o que você aceita.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="bg-brand-ink text-white/70 py-6 px-5 text-center text-xs tracking-wide">
+    Todos os direitos reservados. Contrato Invisível. 2026
+  </footer>
+
+  <!-- MODAL -->
+  <div id="lead-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="relative w-full max-w-md bg-white rounded-2xl shadow-2xl p-6 sm:p-8 animate-rise">
+      <button type="button" data-close-modal class="absolute top-4 right-4 text-brand-soft hover:text-brand-ink text-2xl leading-none" aria-label="Fechar">&times;</button>
+      <h3 id="modal-title" class="text-2xl font-extrabold text-brand-ink pr-8">Garanta seu exemplar</h3>
+      <p class="mt-2 text-sm text-brand-soft">Preencha seus dados e nossa equipe entra em contato para finalizar seu pedido.</p>
+      <form id="lead-form" class="mt-6 space-y-3">
+        <input type="text" name="name" placeholder="Nome" required class="w-full rounded-xl border border-brand-line px-4 py-3 text-sm outline-none focus:border-brand-red focus:ring-2 focus:ring-brand-red/20">
+        <input type="email" name="email" placeholder="Email" required class="w-full rounded-xl border border-brand-line px-4 py-3 text-sm outline-none focus:border-brand-red focus:ring-2 focus:ring-brand-red/20">
+        <input type="tel" name="whatsapp" placeholder="WhatsApp (DDD + Número)" required pattern="[0-9()#&+*\-=.]+" class="w-full rounded-xl border border-brand-line px-4 py-3 text-sm outline-none focus:border-brand-red focus:ring-2 focus:ring-brand-red/20">
+        <button type="submit" class="cta w-full py-3.5 text-sm">Enviar</button>
+      </form>
+      <p id="form-success" class="hidden mt-4 text-sm text-center text-brand-ink font-medium">Recebemos seus dados. Em breve entraremos em contato.</p>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const modal = document.getElementById('lead-modal');
+      const form = document.getElementById('lead-form');
+      const success = document.getElementById('form-success');
+
+      function openModal() {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        document.body.style.overflow = '';
+      }
+
+      document.querySelectorAll('[data-open-modal]').forEach(function (btn) {
+        btn.addEventListener('click', openModal);
+      });
+      document.querySelectorAll('[data-close-modal]').forEach(function (btn) {
+        btn.addEventListener('click', closeModal);
+      });
+      modal.addEventListener('click', function (e) {
+        if (e.target === modal) closeModal();
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeModal();
+      });
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        form.classList.add('hidden');
+        success.classList.remove('hidden');
+      });
+
+      const io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+      document.querySelectorAll('.reveal').forEach(function (el) {
+        io.observe(el);
+      });
+    })();
+  </script>
+</body>
+</html>
